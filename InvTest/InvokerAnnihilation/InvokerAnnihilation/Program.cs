@@ -127,12 +127,13 @@ namespace InvokerAnnihilation
                 SpellInfo.Add(meteor.Name, new SpellStruct(e, e, w));
                 
 
+                Combos[_maxCombo] = new ComboStruct(new[] {forgeSpirit, coldsnap, ss},3);
                 Combos[_maxCombo] = new ComboStruct(new[] {ss, meteor, blast, coldsnap, forgeSpirit}, 5, true);
                 Combos[_maxCombo] =
-                    new ComboStruct(new[] {tornado, ss, meteor, blast, tornado, coldsnap, alacrity, forgeSpirit},5);
+                    new ComboStruct(new[] {tornado, ss, meteor, blast, coldsnap, emp, icewall, forgeSpirit},5);
                 Combos[_maxCombo] = new ComboStruct(new[] {tornado, emp, ss, meteor, blast, tornado, coldsnap},5);
                 Combos[_maxCombo] = new ComboStruct(new[] {tornado, emp, meteor, blast, coldsnap},5);
-                Combos[_maxCombo] = new ComboStruct(new[] {tornado, meteor, blast},3);
+                
                 Combos[_maxCombo] = new ComboStruct(new[] {tornado, emp, blast},3);
                 Combos[_maxCombo] = new ComboStruct(new[] {tornado, emp, icewall},3);
                 Combos[_maxCombo] = new ComboStruct(new[] {tornado, ss, icewall},3);
